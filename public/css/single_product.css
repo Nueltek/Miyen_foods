@@ -1,0 +1,32 @@
+.qty2{
+   
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    background-color: #e1e1e1;
+    border-radius: 20px;
+    padding: 5px;
+    width: 200px;
+    
+  }
+.qty2 span{
+
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    cursor: pointer;
+    box-shadow: 3px 3px 5px lightgray, 1px 1px 2px lightgray;
+    user-select: none;
+    transition: scale 0.2s ease;
+  }
+ .qty2 span:hover{
+    scale: 1.1;
+  }
+ .qty2 span:active{
+    scale: 1;
+  }

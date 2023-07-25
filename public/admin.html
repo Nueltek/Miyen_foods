@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="favicon_io/favicon-16x16.png" type="image/x-icon">
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/31a7f3e335.js" crossorigin="anonymous"></script>
+        <title>Miyenfoods: awesomeflavours</title>
+    </head>
+    <style>
+        /* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+  font-family: 'Comic Neue', sans-serif;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.admin-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.admin-page {
+  max-width: 600px;
+  margin-bottom: 30px;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin: 10px 10px 10px 0px;
+}
+
+#existing-posts,
+#blogPosts {
+  margin-bottom: 20px;
+}
+
+#distributor-container {
+  margin-top: 50px;
+}
+#reviews-container {
+  margin-top: 50px;
+  max-width: 600px;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .admin-page {
+    max-width: 400px;
+  }
+}
+
+    </style>
+<body>
+
+<header>
+    <h1>Admin Page</h1>
+    <button id="admin_logout_btn">Logout</button>
+</header>
+<div class="admin-container">
+
+<div class="admin-page ">
+    <h2>Create or Edit Blog Post</h2>
+    <form id="postForm">
+        <input type="text" name="title" placeholder="Title" required>
+        <textarea name="content" placeholder="Content" required></textarea>
+        <input type="date" name="date" required>
+        <input type="file" name="banner" accept="image/*">
+        <button type="submit">Save Post</button>
+    
+        <button type="button" id="cancelButton">Cancel</button>
+    </form>
+    <div id="existing-posts"></div>
+    <div id="blogPosts"></div>
+
+
+</div>
+
+<div id="reviews-container">
+    <!-- product review -->
+    <h1>List of Customers that dropped rievew about Miyen</h1>
+</div>
+<div id="distributor-container">
+    <!-- distributors will be displayed here -->
+    <h1>List of Interested Distributors</h1>
+</div>
+<div id="contact-container">
+  <h1>Contacted from website and their reasons</h1>
+</div>
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-app.js" type="module"></script>
+<script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-database.js" type="module"></script>
+<script src="js/admin.js" type="module"></script>
+
+</body>
+</html>

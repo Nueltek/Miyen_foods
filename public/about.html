@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon_io/favicon-16x16.png" type="image/x-icon">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/31a7f3e335.js" crossorigin="anonymous"></script>
+    <title>Miyenfoods: awesomeflavours</title>
+</head>
+<body>
+    <!-- backdrop -->
+    <div class="backdrop"></div>
+    <!-- side cart -->
+    <div class="sidecart" id="sidecart">
+        <div class="cart_content">
+            <!-- cart header -->
+            <div class="cart_header">
+                <div class="header_title">
+                    <h2>CART</h2>
+                </div>
+                <span id="close_btn" class="close_btn">&times;</span>
+            </div>
+             <!-- cart items -->
+            <div class="cart_items">
+                <!-- item1 -->
+                
+            </div>
+             <!-- cart actions -->
+             <div class="cart_actions">
+                <div class="subtotal">
+                    <p>TOTAL:</p>
+                    <P>$<span id="subtotal_price">4500</span></P>
+                </div>
+                <button onclick="window.location.href='/cart'">View Cart</button>
+
+                <button id="checkout_btn">Checkout</button>
+             </div>
+        </div>
+    </div>
+    <section id="header">
+        
+
+        <a href="index.html"><img src="images/logo/mitrabspa2.png" alt="company logo" class="logo"></a>
+
+        <div>
+
+            <ul id="navbar">
+
+                <li><a href="index.html"   >Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="products.html">Buy Miyen <span class="icon"></span></a></li>
+                <li><a href="contactpage.html" >Contact Us</a></li>
+                <li><a href="blogpage.html">Blog</a></li>
+                
+                <li>
+                    <a  id="bag" class="baggy" >
+                        <i class="fa fa-shopping-basket" id="baggy" aria-hidden="true"></i>
+                        <div class="cartAmount"></div>
+                    </a>
+                    
+                </li>
+                <a  id="closebtn"><i class="fa-solid fa-xmark"></i></a>
+             </ul>
+        </div>
+        <div id="mobile">
+            <a class="baggym"  ><i class="fa fa-shopping-basket" id="baggym" aria-hidden="true"></i>
+            <div class="cartAmountm" id="cartAmountm"></div>
+            </a>
+           
+
+            <i id="bar" class="fa-solid fa-bars"></i>
+        </div>
+    
+    </section>
+    <section id="product-hero" class="about-hero">
+        <div class="container">
+            <h1>Our Story</h1>
+            <h2>What make us stand  out?</h2>
+            
+        </div>
+    </section>
+    <!-- about section -->
+
+    <section id="aboutus">
+        <div class="container">
+            <article class="leftside">
+               
+            
+                <p>Welcome to The Miyen Group LLC, where we believe in providing you with a healthier and more nutritious alternative to the African foods we all know and love. We understand that many of us often opt for foods that are less harmful or simply fill our bellies, without considering the essential nutrients our bodies need to thrive. This often leads to a lack of vitamins and minerals, resulting in minor or serious illnesses and even obesity.</p> <br> <br>
+              
+                <p>At The Miyen Group LLC, we aim to change that narrative. Our flagship product, the Miyen Nuden Poundo, is not just a safer option than other poundos, swallows, or fufus out there—it's a superfood that will fill your body with goodness and important nutrients, making you healthier and stronger. Our poundo is made from flour derived from 10 carefully selected organic, ancient grains, root vegetables, and psyllium husk, each ingredient bringing different essential vitamins and minerals to the table.</p> <br>
+              
+                <p>But what exactly are ancient grains? Ancient grains are a category of grains and pseudo-grains that have been cultivated for thousands of years, remaining largely unchanged by modern selective breeding techniques. These grains retain their unique flavors, nutritional profiles, and benefits. Compared to modern and refined grains, ancient grains are more nutrient-dense, rich in dietary fiber, vitamins (such as B vitamins and vitamin E), minerals (including magnesium, iron, and zinc), and antioxidants. They play crucial roles in various bodily functions, including energy production, immune function, and cell health. Additionally, ancient grains can grow properly without the aid of synthetic fertilizers due to their genetic adaptabilities and deep root systems.</p> <br>
+              
+                <p>In addition to ancient grains, our poundo incorporates vegetable roots, which are vegetables that grow underground and have edible roots or tubers. These root vegetables store energy and nutrients in their roots, making them rich sources of carbohydrates, fiber, vitamins, and minerals.</p> <br>
+              
+                <p>Let's delve into the ingredients that make up our Organic Nuden Poundo:</p> <br>
+              
+                <h2>Ancient Grains Flours:</h2>
+                <ul>
+                  <li>
+                    <strong>Khorasan:</strong> Also known as Kamut, this nutritious wheat variety is a good source of protein, dietary fiber, vitamins, and minerals. It promotes better digestion, brain function, provides energy, and is rich in antioxidants.
+                  </li> <br>
+                  <li>
+                    <strong>Spelt:</strong> Another wholesome wheat variety, spelt is rich in micronutrients, offering several health benefits such as improving heart health and reducing bloating.
+                  </li> <br>
+                  <li>
+                    <strong>Buckwheat:</strong> A gluten-free ancient grain-like seed, buckwheat is packed with essential amino acids, vitamins, minerals, and antioxidants. It helps improve blood cholesterol levels, reduces the risk of heart disease, diabetes, stroke, and obesity.
+                  </li> <br>
+                  <li>
+                    <strong>Barley:</strong> This nutrient-dense grain is a good source of dietary fiber, particularly soluble fiber known as beta-glucan. It plays a significant role in fighting insulin resistance, cancer, dyslipidemia, hypertension, and obesity.
+                  </li> <br>
+                  <li>
+                    <strong>Amaranth:</strong> Another gluten-free ancient grain-like seed, amaranth is highly nutritious and rich in phosphorus, iron, and antioxidants. It supports brain function, bone health, blood production, and may reduce inflammation.
+                  </li> <br>
+                  <li>
+                    <strong>Sorghum:</strong> A nutrient-rich, gluten-free cereal grain, sorghum contains vitamins, minerals, and phenolic compounds that act as antioxidants. It promotes gut health and has anti-cancer effects.
+                  </li> <br>
+                  <li>
+                    <strong>Chickpea:</strong> Also known as garbanzo beans, chickpeas are an excellent source of plant-based protein, complex carbohydrates, vitamins, minerals, and dietary fiber. They support digestion, regulate blood sugar levels, aid in weight management, and contribute to fetal development during pregnancy.
+                  </li> <br>
+                </ul>
+              
+                <h2>Root Vegetables:</h2>
+                <ul>
+                  <li>
+                    <strong>Potato flour:</strong> Made from dried potatoes, potato flour is gluten-free and rich in dietary fiber. It aids digestion, promotes regular bowel movements, and supports gut health. It also contains vitamins and minerals such as potassium, magnesium, and phosphorus.
+                  </li> <br>
+                  <li>
+                    <strong>Arrowroot powder:</strong> Derived from the arrowroot plant, this root vegetable is a source of protein and several minerals. It supports the immune system, aids weight loss, and provides essential folate for development during pregnancy.
+                  </li> <br>
+                  <li>
+                    <strong>Psyllium Husk:</strong> This dietary fiber is derived from the outer coating of Plantago ovata seeds. It is commonly used as a natural remedy for digestive issues and as a dietary supplement. Psyllium husk is low in carbs and calories, rich in minerals, vitamins, antioxidants, and has prebiotic effects.
+                  </li> <br>
+                </ul>
+              
+                <p>We take pride in using only organic ingredients, ensuring that the grains are whole grains and that every component is sourced and handled with the utmost care to retain its nutrients and goodness.</p> <br>
+              
+                <p>Unlike other poundos that consist of only one or a few ingredients, limiting the nutrients they offer, our Nuden Poundo is fortified with several vitamins and minerals from its diverse range of ingredients. Additionally, it contains no harmful preservatives, providing you with a truly wholesome and nourishing meal option.</p> <br>
+              
+                <p>Let's explore the remarkable nutrients present in our Nuden Poundo:</p> <br>
+              
+                <ul>
+                  <li>Dietary fiber: Promotes a healthy digestive system, regular bowel movements, and contributes to a feeling of fullness.</li> <br>
+                  <li>Protein: Essential for growth, repair, and maintenance of body tissues.</li> <br>
+                  <li>Carbohydrates: A vital energy source for the body's functions.</li> <br>
+                  <li>B-vitamins (thiamine, riboflavin, niacin, vitamin B6, Pantothenic acid): Support energy production, brain function, and overall well-being.</li> <br>
+                  <li>Magnesium: Important for bone health, nerve function, and muscle contraction.</li> <br>
+                  <li>Phosphorus: Supports healthy bones and teeth, aids in energy production, and contributes to cell health.</li> <br>
+                  <li>Zinc: Plays a crucial role in immune function, wound healing, and protein synthesis.</li> <br>
+                  <li>Iron: Essential for red blood cell production and oxygen transport throughout the body.</li> <br>
+                  <li>Selenium: Acts as an antioxidant, supports thyroid function, and plays a role in DNA synthesis.</li> <br>
+                  <li>Manganese: Important for bone health, metabolism, and antioxidant defenses.</li> <br>
+                  <li>Copper: Facilitates iron absorption, supports collagen formation, and contributes to the functioning of the nervous system.</li> <br>
+                  <li>Folate: Essential for cell division, DNA synthesis, and the formation of red blood cells. Crucial for pregnant women to support fetal development.</li> <br>
+                  <li>Calcium: Promotes strong and healthy bones and teeth.</li> <br>
+                  <li>Vitamin E: An antioxidant that supports immune function and cell health.</li> <br>
+                  <li>Potassium: Helps maintain healthy blood pressure, supports proper muscle and nerve function.</li> <br>
+                  <li>Vitamin C: Boosts the immune system, aids in collagen production, and supports overall well-being.</li> <br>
+                  <li>Butyrate: A type of fatty acid that supports gut health and may have anti-inflammatory effects.</li> <br>
+                  <li>Saponins: Plant compounds that possess various health benefits, including potential anti-cancer effects.</li> <br>
+                  <li>Vitamin K: Essential for blood clotting and bone health.</li> <br>
+                  <li>Pantothenic Acid: A B-vitamin that supports energy production and hormone synthesis.</li> <br>
+                </ul>
+              
+                <p>The nutrients in our Nuden Poundo offer a wide array of benefits, including support for strong and healthy bones, a better functioning digestive system, improved gut health, regular bowel movements, body detoxification, reduced frequency of common colds, brain health support, hormone balancing, pregnancy support, mood enhancement, lower bad cholesterol levels, heart disease prevention, blood sugar regulation, weight loss support, protection against cancer, improved blood production and circulation, nerve and muscle support, an immune system boost, prevention and management of high blood pressure, reduced inflammation, diabetes prevention and management, promotion of better sleep, and healthier and more beautiful skin.</p> <br>
+              
+                <p>While it is important to emphasize that no food can replace proper medical care, advice, prescribed medications, healthy living practices, portion control, and exercise, consuming nutritious, 100% natural, and delicious food like our Nuden Poundo is a significant step towards taking care of your body and overall well-being. You no longer have to avoid the foods you love out of concern for negative effects on your weight or health. With our Nuden Poundo, you can indulge in the pleasure of enjoying poundo without guilt, knowing that you are nourishing your body and truly embodying the concept of "doing good while having fun."</p> <br>
+              
+                <p>Choose the Miyen Foods Group LLC's Nuden Poundo and experience the exceptional taste and remarkable health benefits of our nutrient-rich superfood. Join us on a journey to optimal nutrition and discover how good food can truly transform your life.</p> <br>
+
+
+
+
+
+            </article>
+        </div>
+    </section>
+
+    <section id="feature" >
+        <div class="container">
+        
+            <div class="feature-container">
+                <div class="feature-box">
+                    <img src="images/ic1 (2).png" alt="benefits of nuden produc">
+
+                </div>
+            
+                <div class="feature-box">
+                    <img src="images/ic2 (2).png" alt="benefits of nuden produc">
+
+                </div>
+                <div class="feature-box">
+                    <img src="images/ic3 (2).png" alt="benefits of nuden produc">
+
+                </div>
+                <div class="feature-box">
+                    <img src="images/ic4 (2).png" alt="benefits of nuden produc">
+
+                </div>
+                <div class="feature-box">
+                    <img src="images/ic5 (1).png" alt="benefits of nuden produc">
+
+                </div>
+                <div class="feature-box">
+                    <img src="images/ic6.png" alt="benefits of nuden produc">
+
+                </div>
+            </div>
+        
+        </div>
+        <a href="products.html" id="shop-btn">SHOP PRODUCTS  <span class="icon"></span></a>
+
+    </section>
+    <section id="review-section" class="distributor">
+
+        <div class="review-container" >
+          <h2>Interested in Becoming a Distributor?</h2>
+          <p>We would love to have you on board.</p>
+          <form id="review-form">
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" id="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone:</label>
+              <input type="tel" id="phone" pattern="[0-9]{10}" required>
+              <small>Enter a 10-digit phone number.</small>
+            </div>
+            
+            <div class="form-group">
+                <label for="name">Company's name:</label>
+                <input type="text" id="company-name" required>
+              </div>
+              <div class="form-group">
+                <label for="name">Industry:</label>
+                <input type="text" id="industry" required placeholder="Health, Agriculture, Food, IT">
+              </div>
+            
+          
+            <div class="form-group">
+              <label for="review">Message:</label>
+              <textarea id="message" rows="8" required></textarea>
+            </div>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    
+      
+    
+    
+       </section>
+  
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-container">
+                <div class="social-media">
+                    <a href="#"><img src="images/logo/mitrabspa2.png" alt="company logo" class="logo"></a>
+                    <h3>Connect with Us</h3>
+                    <ul>
+                        <li><a href="#"><i class="fa-brands fa-facebook" style="color: #1c51ba;"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter" style="color: #1c51ba;"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram" style="color: #ba1c78"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-youtube" style="color: #dd420e;"></i></a></li>
+                    </ul>
+                </div>
+                <div class="footer-nav">
+                    <h3>Company</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="blogpage.html">Blog</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Shipping & Returns</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="contact-info">
+                    <h3>Contact Us</h3>
+                    <p>Phone: <span class="contact-details">+1-(646)-420-5338</span></p>
+                    <p>Email: <span class="contact-details">info@miyenfoods.com</span></p>
+                    <p>Address: <span class="contact-details"></span>3532 Brown Street, Walnut Creek, California.</p>
+                </div>
+                <div class="newsletter">
+                    <h3>Newsletter</h3>
+                    <p>Stay updated with our latest products and exclusive offers. Subscribe to our newsletter.</p>
+                    <form action="#" method="post">
+                        <input type="email" name="email" placeholder="Enter your email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </div>
+                <div class="payment-methods">
+                    <h3>Accepted Payment Methods</h3>
+                    <img src="/images/WhatsApp_Image_2023-06-11_at_6_50_04_PM-transformed.png" alt="Payment Methods">
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; <span id="current-year">[Current Year]</span> THE MIYEN GROUP LLC.</p>
+        </div>
+    </footer>
+
+
+
+
+
+    <script type="module" src="js/distributor.js"></script>
+    <script type="module" src="js/main.js"></script>
+      <script type="module" src="js/cart.js"></script>
+      <script type="module" src="js/productData.js"></script>
+      <script type="module" src="js/checkout.js"></script>
+    
+    
+    
+  
+
+    
+</body>
+</html>

@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon_io/favicon-16x16.png" type="image/x-icon">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/31a7f3e335.js" crossorigin="anonymous"></script>
+     <title>Signup Here</title>
+  <style>
+    
+    .loader{
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 10%;
+      background-color: none;
+      z-index: 5;
+      display: none;
+    }
+
+    .contain {
+      width: 500px;
+      margin: 0 auto ;
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+    }
+
+    
+    .miyen-label-required::after {
+    content: "*";
+    vertical-align: middle;
+    margin-left: 5px;
+    color: #f0506e;
+}
+
+   .contain #signup-form input[type="text"],
+   .contain #signup-form input[type="email"],
+   .contain #signup-form input[type="password"] {
+      margin-top: 10px;
+      width: 100%;
+      padding: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      margin-bottom: 40px;
+    }
+    .pQuestion{
+      font-size: 18px;
+      font-weight: bold;
+      line-height: 1.3em;
+      color: #efa31a;
+    }
+    .online-user {
+    display: inline-block;
+    margin-right: 10px;
+    width: 12px;
+    height: 12px;
+    background: #CCCC33;
+    border-radius: 50%;
+    margin-top: 2px;
+  }
+    .password-toggle {
+      position: relative;
+    }
+
+    .password-toggle input[type="password"] {
+      padding-right: 40px;
+    }
+
+    .password-toggle .toggle-btn {
+      position: absolute;
+      top: 30%;
+      right: 10px;
+      transform: translateY(-50%);
+      cursor: pointer;
+    }
+    .password-toggle .toggle-btn2 {
+      position: absolute;
+      top: 30%;
+      right: 10px;
+      transform: translateY(-50%);
+      cursor: pointer;
+    }
+
+    .checkbox-container {
+      margin-bottom: 10px;
+      display: flex;
+    }
+
+    .checkbox-container label {
+      
+      margin-left: 10px;
+    }
+
+    button {
+      background-color: #006633;
+      font-weight: 700;
+      color: #fff;
+      padding: 15px ;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 18px;
+      width: 100%;
+    }
+
+    button:hover {
+      background-color: #efa31a;
+    }
+
+    .error {
+      color: red;
+      margin-top: 5px;
+    }
+    #signup-content{
+      padding: 70px;
+    }
+    #err{
+      color: red;
+      font-size: 18px;
+      font-weight: 900;
+      display: block;
+      margin: 15px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <img src="images/Spinner-1s-200px (1).gif" class="loader" alt="loading">
+  <section id="header">
+        
+
+    <a href="#"><img src="images/logo/mitrabspa2.png" alt="company logo" class="logo"></a>
+    <div>
+        <ul id="navbar">
+            <li><a href="index.html"   >Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="products.html">Buy Miyen <span class="icon"></span></a></li>
+            <li><a href="contactpage.html">Contact Us</a></li>
+            <li><a href="blogpage.html">Blog</a></li>
+            <li><a href="login.html" class="active"><i class="fa-solid fa-user"><span id="online-user"></span></i></a></li>
+            <li>
+              <a href="#" id="bag">
+                  <i class="fa fa-shopping-basket" id="baggy" aria-hidden="true"></i>
+                  <div class="cartAmount">0</div>
+              </a>
+              
+          </li>
+            <a  id="closebtn"><i class="fa-solid fa-xmark"></i></a>
+         </ul>
+         
+    </div>
+    <div id="mobile">
+        <a href="#"><i class="fa fa-shopping-basket" aria-hidden="true"></i></a>
+
+        <i id="bar" class="fa-solid fa-bars"></i>
+    </div>
+
+</section>
+
+    <main id = "signup-content">
+  
+      <div class="contain">
+        <h2>Create account</h2>
+        <div id="signup-form" method="post" action="/signup">
+
+            <label for="first-name" class="miyen-label-required">First Name:</label>
+            <input type="text" id="first-name" name="first-name"  autocomplete="off" >
+            <label for="last-name" class="miyen-label-required">Last Name:</label>
+            <input type="text" id="last-name" name="last-name" required autocomplete="off">
+            <label for="email" class="miyen-label-required">Email:</label>
+            <input type="email" id="email" name="email" required autocomplete="off">
+            <label for="password" class="miyen-label-required">Password:</label>
+            <div class="password-toggle">
+              <input type="password" id="password" name="password" required autocomplete="off">
+              <span class="toggle-btn">&#x1F440;</span>
+            </div>
+            <label for="confirm-password" class="miyen-label-required">Confirm Password:</label>
+            <div class="password-toggle">
+            <input type="password" id="confirm-password" name="confirm-password" required autocomplete="off">
+            <span class="toggle-btn2">&#x1F440;</span>
+            </div>
+            <div class="checkbox-container">
+              <input type="checkbox" id="terms" name="terms" required>
+              <label for="terms">I agree to the terms and conditions</label>
+            </div>
+            <div class="checkbox-container">
+              <input type="checkbox" id="newsletter" name="newsletter">
+              <label for="newsletter">Subscribe to newsletter</label>
+            </div>
+            <button type="submit" id="submitBtn">Sign Up</button>
+        </div>
+        <span id="err"></span> <br>
+        <p class ="pQuestion">Already have an account with us?</p>
+        <p class ="pQuestion">Welcome back, click here to <a href="login.html">Sign in</a></p>
+      </div>
+
+
+  </main>
+
+
+   <footer class="footer">
+      <div class="container">
+          <div class="footer-container">
+              <div class="social-media">
+                  <a href="#"><img src="images/logo/mitrabspa2.png" alt="company logo" class="logo"></a>
+                  <h3>Connect with Us</h3>
+                  <ul>
+                      <li><a href="#"><i class="fa-brands fa-facebook" style="color: #1c51ba;"></i></a></li>
+                      <li><a href="#"><i class="fab fa-twitter" style="color: #1c51ba;"></i></a></li>
+                      <li><a href="#"><i class="fab fa-instagram" style="color: #ba1c78"></i></a></li>
+                      <li><a href="#"><i class="fa-brands fa-youtube" style="color: #dd420e;"></i></a></li>
+                  </ul>
+              </div>
+              <div class="footer-nav">
+                  <h3>Company</h3>
+                  <ul>
+                      <li><a href="#">Home</a></li>
+                      <li><a href="#">Blog</a></li>
+                      <li><a href="#">Products</a></li>
+                      <li><a href="#">About Us</a></li>
+                      <li><a href="#">FAQs</a></li>
+                      <li><a href="#">Shipping & Returns</a></li>
+                      <li><a href="#">Privacy Policy</a></li>
+                      <li><a href="#">Terms of Service</a></li>
+                  </ul>
+              </div>
+              <div class="contact-info">
+                  <h3>Contact Us</h3>
+                  <p>Phone: <span class="contact-details">+1-(646)-420-5338</span></p>
+                  <p>Email: <span class="contact-details">info@miyenfoods.com</span></p>
+                  <p>Address: <span class="contact-details"></span>3532 Brown Street, Walnut Creek, California.</p>
+              </div>
+              <div class="newsletter">
+                  <h3>Newsletter</h3>
+                  <p>Stay updated with our latest products and exclusive offers. Subscribe to our newsletter.</p>
+                  <form action="#" method="post">
+                      <input type="email" name="email" placeholder="Enter your email" required>
+                      <button type="submit">Subscribe</button>
+                  </form>
+              </div>
+              <div class="payment-methods">
+                  <h3>Accepted Payment Methods</h3>
+                  <img src="/images/WhatsApp_Image_2023-06-11_at_6_50_04_PM-transformed.png" alt="Payment Methods">
+              </div>
+          </div>
+      </div>
+      <div class="copyright">
+          <p>&copy; <span id="current-year">[Current Year]</span> THE MIYEN GROUP LLC.</p>
+      </div>
+  </footer>
+    
+
+
+<script type="module" src="js/form.js"></script>
+<script type="module" src="js/common.js"></script>
+<script type="module" src="js/main.js"></script>
+
+</body>
+</html>

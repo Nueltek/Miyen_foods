@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="favicon_io/favicon-16x16.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="favicon_io/favicon-16x16.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/31a7f3e335.js" crossorigin="anonymous"></script>
+    <title>Miyenfoods: awesomeflavours</title>
+</head>
+<body>
+
+    <!-- backdrop -->
+    <div class="backdrop"></div>
+    <!-- side cart -->
+    <div class="sidecart" id="sidecart">
+        <div class="cart_content">
+            <!-- cart header -->
+            <div class="cart_header">
+                <div class="header_title">
+                    <h2>CART</h2>
+                </div>
+                <span id="close_btn" class="close_btn">&times;</span>
+            </div>
+             <!-- cart items -->
+            <div class="cart_items">
+                <!-- item1 -->
+                
+            </div>
+             <!-- cart actions -->
+             <div class="cart_actions">
+                <div class="subtotal">
+                    <p>TOTAL:</p>
+                    <P>$<span id="subtotal_price">4500</span></P>
+                </div>
+                <button onclick="window.location.href='/cart'">View Cart</button>
+
+                <button id="checkout_btn">Checkout</button>
+             </div>
+        </div>
+    </div>
+    <section id="header">
+        
+
+        <a href="index.html"><img src="images/logo/mitrabspa2.png" alt="company logo" class="logo"></a>
+
+        <div>
+
+            <ul id="navbar">
+
+                <li><a href="index.html"  class="active" >Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="products.html">Buy Miyen <span class="icon"></span></a></li>
+                <li><a href="contactpage.html" >Contact Us</a></li>
+                <li><a href="blogpage.html">Blog</a></li>
+                
+                <li>
+                    <a  id="bag" class="baggy" >
+                        <i class="fa fa-shopping-basket" id="baggy" aria-hidden="true"></i>
+                        <div class="cartAmount"></div>
+                    </a>
+                    
+                </li>
+                <a  id="closebtn"><i class="fa-solid fa-xmark"></i></a>
+             </ul>
+        </div>
+        <div id="mobile">
+            <a class="baggym"  ><i class="fa fa-shopping-basket" id="baggym" aria-hidden="true"></i>
+            <div class="cartAmountm" id="cartAmountm"></div>
+            </a>
+           
+
+            <i id="bar" class="fa-solid fa-bars"></i>
+        </div>
+    
+    </section>
+
+    <section id="hero">
+        <div class="container" >
+        <div class="content-left">
+            
+            <h1>The Nutrients Your Body </h1>
+            <h1>Needs In The Foods</h1>
+            
+            <h2> You LOVE.</h2>
+            <p>Made with love and lots of nutritious ingredients, with your health in mind. </p>
+            <a href="products.html" id="cta" >Order Now  <span class="icon"></span></a>
+        </div>
+       
+        </div>
+    </section>
+
+    <section id="feature" >
+        <div class="container">
+        <h2>Some of the awesome benefits of Nuden Poundo.</h2>
+        <div class="feature-container">
+        <div class="feature-box">
+            <img src="images/features/icon1 (1).png" alt="benefits of nuden produc">
+
+        </div>
+        <!-- <div class="feature-box">
+            <img src="images/features/icon2 (1).png" alt="benefits of nuden produc">
+
+        </div> -->
+        <div class="feature-box">
+            <img src="images/features/icon3 (1).png" alt="benefits of nuden produc">
+
+        </div>
+        <div class="feature-box">
+            <img src="images/features/icon4 (1).png" alt="benefits of nuden produc">
+
+        </div>
+        <div class="feature-box">
+            <img src="images/features/icon5 (1).png" alt="benefits of nuden produc">
+
+        </div>
+        <div class="feature-box">
+            <img src="images/features/icon6 (1).png" alt="benefits of nuden produc">
+
+        </div>
+        <div class="feature-box">
+            <img src="images/features/icon7 (1).png" alt="benefits of nuden produc">
+
+        </div>
+    </div>
+</div>
+    </section>
+
+    <section class="pro">   
+     <div class="container">
+    <h2>Take your taste buds for a treat - Shop Miyen Products </h2>
+    <p>High in Fiber | High in Protien and Energy.</p>
+    <div class="product-list" id="product-list">
+        
+        
+    
+    </div>
+    <a href="products.html" id="shop-btn">SHOP PRODUCTS  <span class="icon"></span></a>
+    </section>
+
+    <section class="about-section">
+        <div class="container">
+            <h2>About Nuden Poundo</h2>
+            <span>Deliciouse | Healthy | Whole Food.</span>
+       
+        
+        <div class="about-container">
+
+            <div class="about-right">
+            
+
+                <p>We often choose the lesser evil with the choices we make with our food, 
+                    especially with the African dishes we have grown to love and enjoy. 
+                    When considering our weight or addressing existing health conditions, we most often than not, 
+                    opt for meals our bodies can tolerate, or simply those that can satisfy our cravings without
+                    adverse effects. It is hardly ever about the nutritional value or benefits the food will provide
+                    for the body. In the long run, our bodies will be deprived of the crucial vitamins and minerals required to function optimally, which may potentially lead or result to various minor or severe illnesses and obesity, thereby making 
+                    it even more difficult to manage.</p>
+
+                <img src="images/PORTIMG3 (1).png" alt="chef putting on appron">
+
+            
+            
+               
+        
+            </div>
+            <div class="about-left">
+
+                <img src="images/PORTIMG1.png" alt="potatoe ans chef holding a spoon">
+
+
+                <p>The Miyen Nuden Poundo goes beyond being a safer option compared to all the other poundos, swallow or fufu out there. It is categorized as a superfood that enriches and fills your body with high nutrients to help you live healthier and stronger. It also empowers and fortifies your body to fight off or manage several life altering and deadly diseases. 
+                    The Miyen Nuden Poundo stands out as it is made of flour gotten from 10 different ingredients which consists of carefully selected organic, ancient grains, root vegetables and psyllium husk, with all 10 ingredients bringing different important vitamins and minerals ‘to the table’. 
+                    The Miyen Nuden Poundo is totally good for you!</p>
+           
+                
+
+
+    
+            </div>
+        
+        
+        </div>
+        <div class="button-container">
+        <a id="learn-btn" href="about.html" >READ MORE  <i class="icon"></i></a>
+        </div>
+    </div>
+</div>
+    </section>
+
+   
+    <section class="testimonial-area ">
+        <div class="container">
+            <div class="testimonial-container">
+                <div class="sec-title">
+                        <h2>What Our Customers Say</h2>
+                        <p>Read some of the amazing things our Customers say about our products.</p>
+                </div>
+                <div class="testimonial-content owl-carousel">
+                    <div class="testimonial-card">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                            Aperiam, ipsum inventore. Voluptates nihil inventore beatae unde? Rem, a
+                            liquam dignissimos soluta amet dolore id, qui tenetur corrupti dolorum vero, 
+                            nisi consectetur.
+                        </p> 
+                        <div class="client-info">
+                            <div class="client-img">
+                                <a href="#"><img src="images/avatar-g423ee30db_1280.png" alt="client image"> </a>
+                            </div>
+                            <div class="client-details">
+                                <h6>Osagie</h6>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="testimonial-card">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                            Aperiam, ipsum inventore. Voluptates nihil inventore beatae unde? Rem, a
+                            liquam dignissimos soluta amet dolore id, qui tenetur corrupti dolorum vero, 
+                            nisi consectetur.
+                        </p> 
+                        <div class="client-info">
+                            <div class="client-img">
+                                <a href="#"><img src="images/teacher-ge51b1eb6a_1280.png" alt="client image"> </a>
+                            </div>
+                            <div class="client-details">
+                                <h6>Chioma</h6>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="testimonial-card">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                            Aperiam, ipsum inventore. Voluptates nihil inventore beatae unde? Rem, a
+                            liquam dignissimos soluta amet dolore id, qui tenetur corrupti dolorum vero, 
+                            nisi consectetur.
+                        </p> 
+                        <div class="client-info">
+                            <div class="client-img">
+                                <a href="#"><img src="images/avatar-g423ee30db_1280.png" alt="client image"> </a>
+                            </div>
+                            <div class="client-details">
+                                <h6>Nosa</h6>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="testimonial-card">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                            Aperiam, ipsum inventore. Voluptates nihil inventore beatae unde? Rem, a
+                            liquam dignissimos soluta amet dolore id, qui tenetur corrupti dolorum vero, 
+                            nisi consectetur.
+                        </p> 
+                        <div class="client-info">
+                            <div class="client-img">
+                                <a href="#"><img src="images/teacher-ge51b1eb6a_1280.png" alt="client image"> </a>
+                            </div>
+                            <div class="client-details">
+                                <h6>Timi</h6>
+                            </div>
+                        </div>
+
+
+                    </div> 
+                </div> 
+            </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="newsletter-section">
+       <div class="container">
+        <div class="news-container-div">
+        
+        <div class="news-container">
+         <h4>Subscribe To Our Newsletter</h4>
+       
+            <p><i class="fa-solid fa-circle-check"></i> Subscribe to our newsletter for exclusive offers and  discount vouchers.</p>
+            <p><i class="fa-solid fa-circle-check"></i> Become a valued member of our community and gain access to exciting benefits!</p>
+            <p><i class="fa-solid fa-circle-check"></i> Get the newest product releases, and irresistible deals, all conveniently delivered to your inbox.</p>
+        </div>
+        
+        
+        <form id="newsletter-form">
+          <input type="email" id="email-input" placeholder="Enter your email address" required>
+          <button type="submit" id="subscribe-button">Subscribe Now</button>
+        </form>
+        
+        
+        <p id="confirmation-message"></p>
+        </div>
+    </div>
+    </section>
+      
+
+    <footer class="footer">
+        <div class="container">
+        
+        <div class="footer-container">
+          <div class=" social-media">
+            <a href="#"><img src="images/logo/mitrabspa2.png" alt="company logo" class="logo"></a>
+
+            
+            <h3>Connect with Us</h3>
+            <ul>
+              <li><a href="#"><i class="fa-brands fa-facebook" style="color: #1c51ba;"></i></a></li>
+              <li><a href="#"><i class="fab fa-twitter" style="color: #1c51ba;"></i></a></li>
+              <li><a href="#"><i class="fab fa-instagram" style="color: #ba1c78"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-youtube" style="color: #dd420e;"></i></a></li>
+            </ul>
+          </div> 
+          
+          <div class="footer-nav">
+            <h3>Company</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="blogpage.html">Blog</a></li>
+              <li><a href="products.html">Products</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">Shipping & Returns</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+            </ul>
+          </div>
+          
+          <div class="contact-info">
+            <h3>Contact Us</h3>
+            <p>Phone: <span class="contact-details">+1-(646)-420-5338</span></p>
+            <p>Email: <span class="contact-details">info@miyenfoods.com</span></p>
+            <p>Address: <span class="contact-details"></span>3532 Brown Street, Walnut Creek, Carlifornia.</p>
+
+
+          </div>
+          
+          <div class="newsletter">
+            <h3>Newsletter</h3>
+            <p>Stay updated with our latest products and exclusive offers. Subscribe to our newsletter.</p>
+            <form action="#" method="post">
+              <input type="email" name="email" placeholder="Enter your email" required>
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
+          
+          <div class="payment-methods">
+            <h3>Accepted Payment Methods</h3>
+            <img src="/images/WhatsApp_Image_2023-06-11_at_6_50_04_PM-transformed.png" alt="Payment Methods">
+          </div>
+          
+          
+          
+          
+
+          </div>
+          
+        </div>
+        <div class="copyright">
+            <p>&copy; <span id="current-year">[Current Year]</span> THE MIYEN GROUP LLC.</p>
+
+          </div>
+        </div>
+        
+    </footer>
+
+    
+      
+
+
+
+
+
+
+
+
+
+    
+    <script type="module" src="js/checkout.js"></script>
+      <script type="module" src="js/main.js"></script>
+      <script type="module" src="js/cart.js"></script>
+      <script type="module" src="js/cartDisplay.js"></script>
+      <script type="module" src="js/productData.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js "></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" ></script> 
+      <script type="text/javascript">
+        $(document).ready(function(){
+            $('.testimonial-content').owlCarousel({
+                        loop:true,
+                        nav:false,
+                        dots:true,
+                        margin:10,
+                        autoplay:true,
+                        autoplayTimeout:3000,
+                        autoplayHoverPause:true,
+                        smartSpeed:800,
+                        responsive:{
+                            0:{
+                                items:1
+                            },
+                            600:{
+                                items:1
+                            },
+                            1000:{
+                                items:2
+                            }
+                        }
+                    })
+        })
+      </script> 
+</body>
+</html>

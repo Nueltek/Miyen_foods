@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon_io/favicon-16x16.png" type="image/x-icon">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/single_product.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/31a7f3e335.js" crossorigin="anonymous"></script>
+    <title>Miyenfoods: awesomeflavours</title>
+</head>
+<body>
+    <!-- backdrop -->
+    <div class="backdrop"></div>
+    <!-- side cart -->
+    <div class="sidecart" id="sidecart">
+        <div class="cart_content">
+            <!-- cart header -->
+            <div class="cart_header">
+                <div class="header_title">
+                    <h2>CART</h2>
+                </div>
+                <span id="close_btn" class="close_btn">&times;</span>
+            </div>
+             <!-- cart items -->
+            <div class="cart_items">
+                <!-- item1 -->
+                
+            </div>
+             <!-- cart actions -->
+             <div class="cart_actions">
+                <div class="subtotal">
+                    <p>TOTAL:</p>
+                    <P>$<span id="subtotal_price">4500</span></P>
+                </div>
+                <button onclick="window.location.href='/cart'">View Cart</button>
+
+                <button id="checkout_btn">Checkout</button>
+             </div>
+        </div>
+    </div>
+    <section id="header">
+        
+
+        <a href="index.html"><img src="images/logo/mitrabspa2.png" alt="company logo" class="logo"></a>
+
+        <div>
+
+            <ul id="navbar">
+
+                <li><a href="index.html"   >Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="products.html">Buy Miyen <span class="icon"></span></a></li>
+                <li><a href="contactpage.html" >Contact Us</a></li>
+                <li><a href="blogpage.html">Blog</a></li>
+                
+                <li>
+                    <a  id="bag" class="baggy" >
+                        <i class="fa fa-shopping-basket" id="baggy" aria-hidden="true"></i>
+                        <div class="cartAmount"></div>
+                    </a>
+                    
+                </li>
+                <li><a href="login.html"  id="bag"><i class="fa-solid fa-user"><span id="online-user"></span></i></a></li>
+                <a  id="closebtn"><i class="fa-solid fa-xmark"></i></a>
+             </ul>
+        </div>
+        <div id="mobile">
+            <a class="baggym active"  ><i class="fa fa-shopping-basket" id="baggym" aria-hidden="true"></i>
+            <div class="cartAmountm" id="cartAmountm"></div>
+            </a>
+           
+
+            <i id="bar" class="fa-solid fa-bars"></i>
+        </div>
+    
+    </section>
+   
+   <section id="productDetails" class="section-p1 container" >
+      
+
+
+        
+
+      
+
+   </section>
+
+   <section id="review-section">
+
+    <div class="review-container">
+      <h2>Leave us a review</h2>
+      <p>We would really love to read your opinion about the Miyen Nuden Poundo.</p>
+      <form id="review-form">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" required>
+        </div>
+        <div class="form-group">
+          <label for="rating">Rating:</label>
+          <div class="stars" id="rating">
+            <input type="radio" id="star1" name="rating" value="1" />
+            <label for="star1" title="1 star" class="fa fa-star"></label>
+            <input type="radio" id="star2" name="rating" value="2" />
+            <label for="star2" title="2 stars" class="fa fa-star" ></label>
+            <input type="radio" id="star3" name="rating" value="3" />
+            <label for="star3" title="3 stars" class="fa fa-star"></label>
+            <input type="radio" id="star4" name="rating" value="4" />
+            <label for="star4" title="4 stars" class="fa fa-star" ></label>
+            <input type="radio" id="star5" name="rating" value="5" />
+            <label for="star5" title="5 stars" class="fa fa-star" ></label>
+          </div>
+        
+        </div>
+        <div class="form-group">
+          <label for="review">Review:</label>
+          <textarea id="review" rows="8" required></textarea>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  
+
+
+   </section>
+    
+   
+
+    <section class="newsletter-section">
+       <div class="container">
+        <div class="news-container-div">
+        
+        <div class="news-container">
+         <h4>Subscribe To Our Newsletter</h4>
+       
+            <p><i class="fa-solid fa-circle-check"></i> Subscribe to our newsletter for exclusive offers and  discount vouchers.</p>
+            <p><i class="fa-solid fa-circle-check"></i> Become a valued member of our community and gain access to exciting benefits!</p>
+            <p><i class="fa-solid fa-circle-check"></i> Get the newest product releases, and irresistible deals, all conveniently delivered to your inbox.</p>
+        </div>
+        
+        
+        <form id="newsletter-form">
+          <input type="email" id="email-input" placeholder="Enter your email address" required>
+          <button type="submit" id="subscribe-button">Subscribe Now</button>
+        </form>
+        
+        
+        <p id="confirmation-message"></p>
+        </div>
+    </div>
+    </section>
+      
+
+    <footer class="footer">
+        <div class="container">
+        
+        <div class="footer-container">
+          <div class=" social-media">
+            <a href="#"><img src="images/logo/mitrabspa2.png" alt="company logo" class="logo"></a>
+
+            
+            <h3>Connect with Us</h3>
+            <ul>
+              <li><a href="#"><i class="fa-brands fa-facebook" style="color: #1c51ba;"></i></a></li>
+              <li><a href="#"><i class="fab fa-twitter" style="color: #1c51ba;"></i></a></li>
+              <li><a href="#"><i class="fab fa-instagram" style="color: #ba1c78"></i></a></li>
+              <li><a href="#"><i class="fa-brands fa-youtube" style="color: #dd420e;"></i></a></li>
+            </ul>
+          </div> 
+          
+          <div class="footer-nav">
+            <h3>Company</h3>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="blogpage.html">Blog</a></li>
+              <li><a href="products.html">Products</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">Shipping & Returns</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+            </ul>
+          </div>
+          
+          <div class="contact-info">
+            <h3>Contact Us</h3>
+            <p>Phone: <span class="contact-details">+1-(646)-420-5338</span></p>
+            <p>Email: <span class="contact-details">info@miyenfoods.com</span></p>
+            <p>Address: <span class="contact-details"></span>3532 Brown Street, Walnut Creek, Carlifornia.</p>
+
+
+          </div>
+          
+          <div class="newsletter">
+            <h3>Newsletter</h3>
+            <p>Stay updated with our latest products and exclusive offers. Subscribe to our newsletter.</p>
+            <form action="#" method="post">
+              <input type="email" name="email" placeholder="Enter your email" required>
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
+          
+          <div class="payment-methods">
+            <h3>Accepted Payment Methods</h3>
+            <img src="/images/WhatsApp_Image_2023-06-11_at_6_50_04_PM-transformed.png" alt="Payment Methods">
+          </div>
+          
+          
+          
+          
+
+          </div>
+          
+        </div>
+        <div class="copyright">
+            <p>&copy; <span id="current-year">[Current Year]</span> THE MIYEN GROUP LLC.</p>
+
+          </div>
+        </div>
+        
+    </footer>
+
+    
+      
+
+
+
+
+      <script type="module" src="js/checkout.js"></script>
+      <script type="module" src="js/s_product1.js"></script>
+      <script type="module" src="js/productData.js"></script>
+      <script type="module" src="js/cart.js"></script>
+      <script type="module" src="js/main.js"></script>
+       
+</body>
+</html>
