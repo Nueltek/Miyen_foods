@@ -21,7 +21,7 @@
   .sc_content img{
     width: 300px
   }
-  
+
   .sc_content h2 {
     font-size: 2rem;
     
@@ -30,10 +30,14 @@
     font-size: 25px;
     font-weight: bold;
     color: #13884e;
-    padding: 4rem ;
+    padding: 1em 3rem ;
     border:none; border-bottom: 4px double #D9D9D9;
   
   }
+  .successbtn{
+    display: flex;
+    justify-content: space-evenly;
+   } 
   .sc_content button{
     border: none;
     background-color: #13884e;
@@ -41,14 +45,16 @@
     padding: 1rem;
     color: #fff;
     border-radius: 1em;
-    margin-top: 3em;
+    margin-top: 1em;
     font-weight: bold;
+    font-size: 1rem;
     margin-right: 1em;
   
     font-size: 1em;
   }
   .sc_content button i{
     color: #ebdf37;
+  
   }
   
   .sc_content button:hover{

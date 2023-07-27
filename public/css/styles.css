@@ -170,6 +170,7 @@ h4 {
 /* cart actions */
 .cart_actions{
   padding: 1rem 2rem;
+  margin-bottom: 2rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
